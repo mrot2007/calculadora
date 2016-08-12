@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  * @author marcelo
  */
 public class CalculadoraTest {
-    
+    Calculadora calc = new Calculadora();
     public CalculadoraTest() {
     }
 
@@ -22,6 +22,7 @@ public class CalculadoraTest {
      */
     @Test
     public void testSomar() {
+         assertEquals(40, calc.somar(10,30), 0);
     }
 
     /**
@@ -29,6 +30,7 @@ public class CalculadoraTest {
      */
     @Test
     public void testSubtrair() {
+        assertEquals(20, calc.subtrair(50,30), 0);
     }
 
     /**
@@ -36,6 +38,7 @@ public class CalculadoraTest {
      */
     @Test
     public void testMultiplicar() {
+        assertEquals(40, calc.multiplicar(10,4), 0);
     }
 
     /**
@@ -43,6 +46,7 @@ public class CalculadoraTest {
      */
     @Test
     public void testDividir() {
+        assertEquals(3, calc.dividir(10,0), 0);
     }
     
 }
