@@ -22,7 +22,7 @@ public class CalculadoraTest {
      */
     @Test
     public void testSomar() {
-         assertEquals(40, calc.somar(10,30), 0);
+         assertEquals(30, calc.somar(10,20), 0);
     }
 
     /**
@@ -46,7 +46,7 @@ public class CalculadoraTest {
      */
     @Test
     public void testDividir() {
-        assertEquals(3, calc.dividir(10,0), 0);
+        assertEquals(5, calc.dividir(10,2), 0);
     }
     
 }
